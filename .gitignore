@@ -6,3 +6,5 @@
 .DS_Store
 adapters/__pycache__/
 controllers/__pycache__/
+/build/
+/dist/
