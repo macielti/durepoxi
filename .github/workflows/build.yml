@@ -16,7 +16,11 @@ jobs:
           archtecture: 'x64'
       - name: Install requirements
         run: |
-          python3 -m PyInstaller -D -F -n durepoxi -c durepoxi.py
+          pip install -r requirements.txt
+      - name: Run PyInstaller
+        run: |
+          pyinstaller -F durepoxi.py
       - name: actions/upload-artifact@v2
         with:
-          name: Linux_durepox
+          name: Linux_durepoxi
+          path: dist/durepoxi

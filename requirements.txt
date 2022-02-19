@@ -1,3 +1,3 @@
-moviepy
-argparse
 pyinstaller
+argparse
+git+https://github.com/Zulko/moviepy.git#egg=moviepy
