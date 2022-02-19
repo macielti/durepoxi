@@ -21,7 +21,7 @@ jobs:
       - name: Run PyInstaller
         run: |
           pyinstaller -F durepoxi.py
-      - name: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v2
         with:
           name: Linux_durepoxi
           path: dist/durepoxi
