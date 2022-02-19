@@ -1,4 +1,4 @@
-from moviepy.video.io.VideoFileClip import VideoFileClip
+from moviepy.editor import VideoFileClip
 from moviepy.video.fx.resize import resize
 
 
